@@ -92,10 +92,10 @@ function App() {
               <div className="w-full h-64 lg:w-2/3 lg:h-[50vh]">
               <Spline scene="https://prod.spline.design/j71eySYKUJBmN-Pu/scene.splinecode" />
               </div>
-              <div className="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
+              <div className="max-w-lg bg-navBar md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
                 <div className="flex flex-col p-12 md:px-16">
-                  <h2 className="text-2xl font-medium text-green-800 uppercase lg:text-4xl">Winding Mountain Road</h2>
-                  <p className="mt-4">
+                  <h2 className="text-2xl font-medium text-white uppercase lg:text-4xl">Winding Mountain Road</h2>
+                  <p className="mt-4 text-white">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex ea commodo consequat.
@@ -108,12 +108,27 @@ function App() {
             </section>
 
             {/* Skills section */}
-            <section id="skills">
-              {/* Skills content */}
-            </section>
+         
+             
+<section className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 justify-evenly' id='skill'>
+<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">I'm Familiar With</h2>
+<div className='flex flex-row flex-wrap justify-center gap-10 mx-4 mt-8 md:mx-16'>
+
+{Logo && Logo.map((index) => (
+    <div key={index} className='w-12 h-12 mx-auto overflow-hidden transition-transform border rounded-lg shadow-lg border-zinc-800 hover:border-zinc-600 md:w-16 md:h-16 lg:w-20 lg:h-20 hover:scale-110'>
+    <img src={index.imageSrc} alt='' />
+  </div>
+))}
+
+
+ 
+</div>
+
+</section>
+
 
             {/* Timeline section */}
-            <section id="projects">
+        
               {/* Projects content */}
             </section>
 
