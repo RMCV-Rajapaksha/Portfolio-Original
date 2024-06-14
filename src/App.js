@@ -88,29 +88,37 @@ function App() {
           {/* Hero */}
           <main className='w-full mt-5'>
             {/* About section */}
-            <section id="about" className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
-              <div className="w-full h-64 lg:w-2/3 lg:h-[50vh]">
+            <section id="home" className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
+              <div className="w-full h-64 lg:w-2/4 lg:h-[45vh]">
               <Spline scene="https://prod.spline.design/j71eySYKUJBmN-Pu/scene.splinecode" />
               </div>
               <div className="max-w-lg bg-navBar md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
                 <div className="flex flex-col p-12 md:px-16">
                   <h2 className="text-2xl font-medium text-white uppercase lg:text-4xl">Winding Mountain Road</h2>
                   <p className="mt-4 text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat.
+                  I am a driven and passionate third-year Computer Engineering undergraduate, deeply immersed in the captivating worlds of software engineering and DevOps. With an insatiable curiosity and a relentless pursuit of new challenges, I am dedicated to unraveling the intricate mysteries of technology. My enthusiasm for innovation and problem-solving fuels my journey as I strive to make a significant impact in the ever-evolving tech landscape.
                   </p>
                   <div className="mt-8">
-                    <a href="#" className="inline-block w-full px-10 py-4 text-lg font-medium text-center text-gray-100 bg-green-600 border-2 border-gray-600 border-solid hover:bg-green-800 hover:shadow-md md:w-48">Read More</a>
+                  <button className="p-[3px] relative"><a  href={CV} download='chamara_vishwajith' >
+                  <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500" />
+  <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+Download CV
+  </div>
+                  </a>
+  
+</button>
                   </div>
                 </div>
               </div>
             </section>
 
+            {/* About section */}
+            
+
             {/* Skills section */}
          
              
-<section className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 justify-evenly' id='skill'>
+<section className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 justify-evenly md:mt-48 lg:mt-56' id='skill'>
 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">I'm Familiar With</h2>
 <div className='flex flex-row flex-wrap justify-center gap-10 mx-4 mt-8 md:mx-16'>
 
