@@ -113,6 +113,22 @@ Download CV
             </section>
 
             {/* About section */}
+            <section className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 justify-evenly md:mt-48 lg:mt-56' id='skill'>
+<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">ABOUT ME</h2>
+<div className='flex flex-row flex-wrap justify-center gap-10 mx-4 mt-8 md:mx-16'>
+  <p className='text-white'>I am a passionate third-year Computer Engineering undergraduate deeply fascinated by everything about computers💻. My academic journey has been centered around software engineering, and I'm currently delving into the exciting field of DevOps. Alongside honing my technical skills, I emphasize developing soft skills, understanding the importance of effective communication, teamwork, and problem-solving.
+
+I am driven by a love for technology and its transformative potential for lives and businesses. Constantly seeking growth, I actively engage in expanding my knowledge and staying updated with the latest advancements in the field. Outside of academics and technology, I find joy in various hobbies and interests. When I'm not coding👨‍💻—especially when there aren't any giant, screen-filling, software-crashing errors🙂‍↕—you can find me playing chess, listening to music🎧, or watching a movie.
+
+I also have a keen interest in robotics and a fascination with space🪐. Always eager to learn new things and take on new challenges, I'm driven by a desire to make a meaningful impact in the world of technology and beyond</p>
+
+
+
+
+ 
+</div>
+
+</section>
             
 
             {/* Skills section */}
