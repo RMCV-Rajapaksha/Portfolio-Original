@@ -3,7 +3,7 @@ import { IoLogoGithub } from 'react-icons/io'; // Make sure to import the IoLogo
 
 const ProjectsSection = ({ Projects }) => {
   return (
-    <section className='flex flex-wrap items-center gap-4 pl-20 pr-20 md:my-24 mx-28 justify-evenly' id='projects'>
+    <section className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 mx-28 justify-evenly' id='projects'>
       {Projects && Projects.map((n) => (
         <motion.div
           key={n.id}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMeSection = () => {
   return (
-    <section className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 justify-evenly md:mt-[45vh] lg:mt-56 md:mx-28' id='skill'>
+    <section className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 justify-evenly md:mt-[45vh] lg:mt-56 md:mx-28' id="about">
       <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">ABOUT ME</h1>
       <div className='flex flex-row flex-wrap justify-center gap-10 mx-4 mt-8 md:mx-16'>
         <p className='text-white'>
