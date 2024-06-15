@@ -4,11 +4,14 @@ import ParticlesComponent from './components/particles';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Spline from '@splinetool/react-spline';
-import { IoMenu, IoLogoGithub } from 'react-icons/io5';
+import { IoMenu} from 'react-icons/io5';
 import CV from './File/EE3253_L2_4733.pdf';
 import { Experience, Projects, SocialLinks, Logo } from './data';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FaReact, FaDatabase, FaServer, FaCogs } from 'react-icons/fa';
+import ProjectsSection from './ProjectsSection';
+import ExperienceSection from './Timeline';
+
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -187,136 +190,16 @@ I also have a keen interest in robotics and a fascination with space🪐. Always
             {/* Skills section */}
          
              
-<section className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 justify-evenly md:mt-48 lg:mt-44' id='skill'>
-<h1 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">I'M FAMILIAR WITH...</h1>   <div className="">
-        <div className="grid grid-cols-1 gap-4 p-10 sm:grid-cols-2 pt-28">
-            <div className="block p-4 border border-gray-800 rounded-xl">
-                <span className="inline-block p-3 rounded-lg">
-                    <div className="inline-flex items-center justify-center text-white align-middle select-none">
-                        <FaReact size={32} />
-                    </div>
-                </span>
-                <h2 className="mt-2 text-base font-semibold text-white sm:text-lg">
-                    Frontend Development
-                </h2>
-                <p className="block text-sm text-gray-300 sm:mt-1 sm:text-base"> Prototype ideas online, without depending on your local environment.
-                </p>
-            </div>
 
-            <div className="block p-4 border border-gray-800 rounded-xl">
-                <span className="inline-block p-3 rounded-lg">
-                    <div className="inline-flex items-center justify-center text-white align-middle select-none">
-                        <FaServer size={32} />
-                    </div>
-                </span>
-                <h2 className="mt-2 text-base font-semibold text-white sm:text-lg">
-                    Backend Development
-                </h2>
-                <p className="block text-sm text-gray-300 sm:mt-1 sm:text-base"> Deliver high-quality, engaging blogs, articles, and video tutorials to your audience.
-                </p>
-            </div>
-
-            <div className="block p-4 border border-gray-800 rounded-xl">
-                <span className="inline-block p-3 rounded-lg">
-                    <div className="inline-flex items-center justify-center text-white align-middle select-none">
-                        <FaCogs size={32} />
-                    </div>
-                </span>
-                <h2 className="mt-2 text-base font-semibold text-white sm:text-lg">
-                    DevOps
-                </h2>
-                <p className="block text-sm text-gray-300 sm:mt-1 sm:text-base"> Easily create and share coding assignments and projects with your students
-                </p>
-            </div>
-
-            <div className="block p-4 border border-gray-800 rounded-xl">
-                <span className="inline-block p-3 rounded-lg">
-                    <div className="inline-flex items-center justify-center text-white align-middle select-none">
-                        <FaDatabase size={32} />
-                    </div>
-                </span>
-                <h2 className="mt-2 text-base font-semibold text-white sm:text-lg">
-                    Database Management
-                </h2>
-                <p className="block text-sm text-gray-300 sm:mt-1 sm:text-base"> For issue reproduction while letting your users try your work without installing it
-                </p>
-            </div>
-        </div>
-    </div>
-<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">TOOLS THAT I CAN USE</h2>
-<div className='flex flex-row flex-wrap justify-center gap-10 mx-4 mt-8 md:mx-16'>
-  
-
-{Logo && Logo.map((index) => (
-    <div key={index} className='w-12 h-12 mx-auto overflow-hidden transition-transform border rounded-lg shadow-lg border-zinc-800 hover:border-zinc-600 md:w-16 md:h-16 lg:w-20 lg:h-20 hover:scale-110'>
-    <img src={index.imageSrc} alt='' />
-  </div>
-))}
-
-
- 
-</div>
-
-</section>
 
 
             {/* Timeline section */}
-            <section className='flex items-center justify-center w-full pl-10 pr-10'>
-  <VerticalTimeline>
-  {
-    Experience && Experience.map((n) => (
-    <VerticalTimelineElement
-    key={n.id}
-      className="vertical-timeline-element--work"
-      contentStyle={{ background: 'rgb(21, 24, 31)', color: '#fff' }}
-      contentArrowStyle={{ borderRight: '7px solid  rgb(21, 24, 31)' }}
-      date={n.date}
-      iconStyle={{ background: 'rgb(21, 24, 31)', color: '#fff' }}
-      icon={n.iconsSrc}
-    >
-      <h3 className="vertical-timeline-element-title">{n.title}</h3>
-      <h4 className="vertical-timeline-element-subtitle">{n.location}</h4>
-      <p>
-        {n.description}
-      </p>
-    </VerticalTimelineElement>))
-  }
-
-  
-  </VerticalTimeline>
-</section>
+           <ExperienceSection experience={Experience} />
 
 {/* Project Section*/}
 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white pt-20">Projects</h2>
-<section className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 justify-evenly' id='projects'>
 
- {Projects && Projects.map((n) => (
-   <div key={n.id} className='border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
-   <p className='font-medium uppercase text-md text-textBase'>
-  {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
-</p>
-
-   <img src={n.imageSrc} className='object-cover w-full h-full my-4 rounded-md'></img>
-   <div className='flex items-center justify-between flex-1 '>
-     <p className='text-lg text-gray-300'>{n.techs}
-     <span className='block text-sm text-gray-500'>
-       {n.techs}
-
-       </span>
-       </p>
-       <a href={n.github}>
-         <motion.div
-         whileTap={{scale:0.8}}
-          className='text-3xl cursor-pointer text-textBase' >
-<IoLogoGithub/>
-         </motion.div>
-       </a>
-   </div>
- </div>
-
- ) )}
-</section>
-
+    <ProjectsSection Projects={Projects}/>
             {/* Contact section */}
             
 <section id="contact" className='flex flex-col items-center justify-center w-full pl-10 pr-10 my-24'>

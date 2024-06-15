@@ -142,28 +142,28 @@ export const Projects = [
 export const SocialLinks = [
   {
     id: 1,
-    iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
+    iconSrc: <IoLogoGithub className="text-3xl cursor-pointer text-textBase" />,
     name: "GitHub",
     link: "https://github.com/RMCV-Rajapaksha",
   },
   {
     id: 1,
     iconSrc: (
-      <IoLogoLinkedin className="text-blue-800 text-3xl cursor-pointer" />
+      <IoLogoLinkedin className="text-3xl text-blue-800 cursor-pointer" />
     ),
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/chamara-vishvajith-09b561242/",
   },
   {
     id: 1,
-    iconSrc: <IoLogoMedium className="text-white text-3xl cursor-pointer" />,
+    iconSrc: <IoLogoMedium className="text-3xl text-white cursor-pointer" />,
     name: "Medium",
     link: "https://medium.com/@sch.chamara",
   },
   {
     id: 1,
     iconSrc: (
-      <IoLogoFacebook className="text-blue-500 text-3xl cursor-pointer" />
+      <IoLogoFacebook className="text-3xl text-blue-500 cursor-pointer" />
     ),
     name: "Facebook",
     link: "https://www.facebook.com/vira.kuma?mibextid=ZbWKwL",
@@ -172,7 +172,7 @@ export const SocialLinks = [
   {
     id: 1,
     iconSrc: (
-      <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
+      <IoLogoWhatsapp className="text-3xl text-green-500 cursor-pointer" />
     ),
     name: "Whatsapp",
     link: "https://wa.me/qr/IY6J7TAUBVOZC1",
@@ -247,3 +247,28 @@ export const Logo = [
   
   
 ];
+
+const skills = [
+  {
+    icon: FaReact,
+    title: 'Frontend Development',
+    description: 'Prototype ideas online, without depending on your local environment.'
+  },
+  {
+    icon: FaServer,
+    title: 'Backend Development',
+    description: 'Deliver high-quality, engaging blogs, articles, and video tutorials to your audience.'
+  },
+  {
+    icon: FaCogs,
+    title: 'DevOps',
+    description: 'Easily create and share coding assignments and projects with your students.'
+  },
+  {
+    icon: FaDatabase,
+    title: 'Database Management',
+    description: 'For issue reproduction while letting your users try your work without installing it.'
+  }
+];
+
+
