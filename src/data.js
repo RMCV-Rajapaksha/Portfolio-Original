@@ -1,4 +1,4 @@
-
+import { FaReact, FaDatabase, FaServer, FaCogs } from 'react-icons/fa';
 import May from './images/may.jpg';
 import C from './images/c.png';
 import CSS from './images/css.png';
@@ -248,7 +248,7 @@ export const Logo = [
   
 ];
 
-const skills = [
+export const skills = [
   {
     icon: FaReact,
     title: 'Frontend Development',

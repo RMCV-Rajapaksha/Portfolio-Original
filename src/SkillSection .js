@@ -3,7 +3,7 @@ import { FaReact, FaServer, FaCogs, FaDatabase } from 'react-icons/fa';
 
 const SkillSection = ({ skills, tools }) => (
   <section 
-    className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 justify-evenly md:mt-48 lg:mt-44' 
+    className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 md:mx-28 justify-evenly md:mt-48 lg:mt-44' 
     id='skill'
   >
     <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">
