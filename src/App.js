@@ -12,6 +12,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import ProjectsSection from './ProjectsSection';
 import ExperienceSection from './Timeline';
 import SkillSection from './SkillSection ';
+import AboutMeSection from './AboutSection';
 
 
 function App() {
@@ -119,7 +120,7 @@ Download CV
 
             {/* About section */}
        
-            
+            <AboutMeSection/>
 
             {/* Skills section */}
          
