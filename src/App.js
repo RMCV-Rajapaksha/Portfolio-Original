@@ -3,7 +3,7 @@ import './App.css';
 import ParticlesComponent from './components/particles';
 
 import 'react-vertical-timeline-component/style.min.css';
-import Spline from '@splinetool/react-spline';
+
 import { IoMenu} from 'react-icons/io5';
 import CV from './File/EE3253_L2_4733.pdf';
 import { Experience, Projects, SocialLinks, Logo ,skills} from './data';
