@@ -12,11 +12,12 @@ const ToolComponent = ({ tool }) => {
   return (
     <motion.div 
     ref={ref}
+    whileHover={{ scale: 1.3 }}
     style={{
       scale: scrollYProgress,
       opacity: scrollYProgress,
     }}
-      className='w-12 h-12 mx-auto overflow-hidden transition-transform border rounded-lg shadow-lg border-zinc-800 hover:border-zinc-600 md:w-16 md:h-16 lg:w-20 lg:h-20 hover:scale-110'
+      className='w-12 h-12 mx-auto overflow-hidden transition-transform border rounded-lg shadow-lg border-zinc-800 hover:border-zinc-600 md:w-16 md:h-16 lg:w-20 lg:h-20 '
     >
       <img src={tool.imageSrc} alt={tool.name} />
     </motion.div>
