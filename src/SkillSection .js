@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaReact, FaServer, FaCogs, FaDatabase } from 'react-icons/fa';
+import SkillItem from './components/skillCard';
 
 const SkillSection = ({ skills, tools }) => (
   <section 
@@ -12,19 +13,7 @@ const SkillSection = ({ skills, tools }) => (
     <div className="">
       <div className="grid grid-cols-1 gap-4 p-10 sm:grid-cols-2 pt-28">
         {skills.map((skill, index) => (
-          <div key={index} className="block p-4 border border-gray-800 rounded-xl">
-            <span className="inline-block p-3 rounded-lg">
-              <div className="inline-flex items-center justify-center text-white align-middle select-none">
-                {React.createElement(skill.icon, { size: 32 })}
-              </div>
-            </span>
-            <h2 className="mt-2 text-base font-semibold text-white sm:text-lg">
-              {skill.title}
-            </h2>
-            <p className="block text-sm text-gray-300 sm:mt-1 sm:text-base">
-              {skill.description}
-            </p>
-          </div>
+          <SkillItem  key={index} skill={skill} />
         ))}
       </div>
     </div>
