@@ -46,6 +46,7 @@ export const Experience = [
       location: "Doha, Qatar",
       description:
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+         img:"https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 2,
@@ -55,6 +56,7 @@ export const Experience = [
       location: "Doha, Qatar",
       description:
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+         img:"https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 3,
@@ -64,6 +66,7 @@ export const Experience = [
       location: "Doha, Qatar",
       description:
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        img:"https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 4,
@@ -73,6 +76,7 @@ export const Experience = [
       location: "Doha, Qatar",
       description:
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+         img:"https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 5,
@@ -82,6 +86,7 @@ export const Experience = [
       location: "Doha, Qatar",
       description:
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+         img:"https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
   ];
 
