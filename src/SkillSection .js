@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaReact, FaServer, FaCogs, FaDatabase } from 'react-icons/fa';
 import SkillItem from './components/skillCard';
+import ToolComponent from './components/ToolComponent';
 
 const SkillSection = ({ skills, tools }) => (
   <section 
@@ -20,14 +21,8 @@ const SkillSection = ({ skills, tools }) => (
     <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">
       TOOLS THAT I CAN USE
     </h2>
-    <div className='flex flex-row flex-wrap justify-center gap-10 mx-4 mt-8 md:mx-16'>
-      {tools.map((tool, index) => (
-        <div 
-          key={index} 
-          className='w-12 h-12 mx-auto overflow-hidden transition-transform border rounded-lg shadow-lg border-zinc-800 hover:border-zinc-600 md:w-16 md:h-16 lg:w-20 lg:h-20 hover:scale-110'
-        >
-          <img src={tool.imageSrc} alt={tool.name} />
-        </div>
+    <div className='flex flex-row flex-wrap justify-center gap-10 mx-4 mt-8 md:mx-16'> {tools.map((tool, index) => (
+        <ToolComponent key={index} tool={tool} />
       ))}
     </div>
   </section>
