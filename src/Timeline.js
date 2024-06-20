@@ -17,6 +17,7 @@ const ExperienceSection = ({ experience }) => (
             icon={item.iconsSrc}
           >
             <h3 className="vertical-timeline-element-title">{item.title}</h3>
+            <img src={item.img}></img>
             <h4 className="vertical-timeline-element-subtitle">{item.location}</h4>
             <p>{item.description}</p>
           </VerticalTimelineElement>
