@@ -34,8 +34,9 @@ import Insurgex from './images/competitions/Insugex.jpg';
 import HackVenture from './images/competitions/HackVenture.jpg';
 import SparkLink from './images/competitions/SparkLink.jpg';
 
-
-
+//oc
+import Axiom from './images/oc/Axiom.jpg';
+import CareerXpo from './images/oc/CareerXpo.jpg';
 
 
 import {
@@ -299,3 +300,24 @@ export const skills = [
 ];
 
 
+
+export const volunteeringData = [
+  {
+    imgSrc: CareerXpo,
+    altText: "volunteering",
+    hoverText: "Hover me!",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    imgSrc:Axiom,
+    altText: "volunteering",
+    hoverText: "Hover me!",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    imgSrc: "https://images.pexels.com/photos/19730800/pexels-photo-19730800/free-photo-of-an-empty-ski-lift-on-the-background-of-rocky-mountains.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+    altText: "volunteering",
+    hoverText: "Hover me!",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  }
+];

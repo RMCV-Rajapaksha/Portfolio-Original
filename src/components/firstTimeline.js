@@ -17,7 +17,7 @@ export const TimelineItem = ({ title, timePeriod, description }) => {
         scale: scrollYProgress,
         opacity: scrollYProgress,
       }}
-      className="relative mb-6 sm:mb-0">
+      className="relative mb-5 sm:mb-0">
         <div className="flex items-center">
           <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-navBar sm:ring-8 dark:ring-gray-900 shrink-0">
             <svg className="w-2.5 h-2.5 text-textBas dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">

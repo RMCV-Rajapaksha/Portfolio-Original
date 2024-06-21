@@ -12,7 +12,8 @@ const ToolComponent = ({ tool }) => {
   return (
     <motion.div 
     ref={ref}
-    whileHover={{ scale: 1.3 }}
+    onHoverStart={{ scale: 1.3 }}
+    onHoverEnd={{ scale: 1 }}
     style={{
       scale: scrollYProgress,
       opacity: scrollYProgress,
