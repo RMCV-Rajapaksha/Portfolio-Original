@@ -9,17 +9,18 @@ const ExperienceSection = ({ experience }) => (
         experience && experience.map((item) => (
           <VerticalTimelineElement
             key={item.id}
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(21, 24, 31)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(21, 24, 31)' }}
+            className="rounded-lg vertical-timeline-element--work"
+            contentStyle={{ background: 'transparent', color: '#fff', textAlign: 'left' }} // Ensure content is left-aligned
+            contentArrowStyle={{ borderRight: '7px solid  transparent' }} // Changed borderRight color to transparent
             date={item.date}
             iconStyle={{ background: 'rgb(21, 24, 31)', color: '#fff' }}
             icon={item.iconsSrc}
           >
-            <h3 className="vertical-timeline-element-title">{item.title}</h3>
-            <img src={item.img}></img>
-            <h4 className="vertical-timeline-element-subtitle">{item.location}</h4>
-            <p>{item.description}</p>
+            <h3 className="text-3xl font-bold vertical-timeline-element-title" style={{ textAlign: 'left' }}>{item.title}</h3>
+            <p className="vertical-timeline-element-subtitle" style={{ textAlign: 'left', fontSize: '0.675rem' /* 14px */ }}>{item.location}</p>
+            <p></p>
+            <img src={item.img} alt={item.title} style={{ display: 'block', marginLeft: '0' }}></img>
+            <p style={{ textAlign: 'left', fontSize: '0.675rem' /* 14px */ }}>{item.description}</p>
           </VerticalTimelineElement>
         ))
       }

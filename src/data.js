@@ -26,6 +26,18 @@ import Pos from './images/thumbnail/Pos.png';
 import Vision from './images/thumbnail/Vision.png';
 import Hostel from './images/thumbnail/Hostel.png';
 
+
+//competitions 
+import Eminence from './images/competitions/Eminence.jpg';
+import Xtreme from './images/competitions/Xtreme.png';
+import Insurgex from './images/competitions/Insugex.jpg';
+import HackVenture from './images/competitions/HackVenture.jpg';
+import SparkLink from './images/competitions/SparkLink.jpg';
+
+
+
+
+
 import {
   IoCodeWorking,
   IoLogoGithub,
@@ -40,46 +52,56 @@ import {
 export const Experience = [
     {
       id: 1,
-      date: "2016 - present",
+      date: "2023",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "Eminence 3.0",
+      location: "By IEEE student branch UOR",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
-         img:"https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800"
+        "As team Team Inception, we won the 6th place among 15+ teams.",
+         img:Eminence
     },
     {
       id: 2,
-      date: "2014 - 2016",
+      date: "2023",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "SparkLink 1.0",
+      location: "By WIE Affinity group of IEEE student branch @ FOE,UOR",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
-         img:"https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800"
+        "As a part of team Matrix, won the 1st place in Eminence 3.0, a software, electronic, telecommunication and electrical field related competition organized by WIE Affinity group of IEEE student branch @ FOE,UOR.",
+         img:SparkLink
     },
     {
       id: 3,
-      date: "2012 - 2014",
+      date: "2023",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "Xtreme 17.0",
+      location: "By IEEE",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
-        img:"https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800"
+        "XTreme was a 24 hour global hackathon organized by IEEE. I was a part of the team TeamInceptionB and we won the 4rd place in University of Ruhuna and placed 116th in Sri Lanka.",
+         img:Xtreme
     },
     {
       id: 4,
-      date: "2011 - 2012",
+      date: "2023",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "Insurgex 1.0",
+      location: "By Computer Science Students' Community @ FOS,UOR",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
-         img:"https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800"
+        "As a part of team Team Inception, won the 2st place in Insurgex 1.0, hackathon competition organized by WIE Affinity group of IEEE student branch @ FOE,UOR.",
+        img:Insurgex
     },
     {
       id: 5,
+      date: "2024",
+      iconsSrc: <IoCodeWorking />,
+      title: "HackVenture 1.0",
+      location: "By AIESEC community @ UOK",
+      description:
+        "As part of Team Inception, Colifi participated in HackVenture 1.0, an innovation competition organized by the AIESEC community at UOK.",
+         img:HackVenture
+    },
+    {
+      id: 6,
       date: "2010 - 2011",
       iconsSrc: <IoCodeWorking />,
       title: "Creative Director",

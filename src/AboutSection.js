@@ -29,9 +29,9 @@ const AboutMeSection = () => {
             description="Completed OL's with 6A's and 3B's AL's with  2A's and B in the Physical Stream"
           />
           <TimelineItem
-            title="University of Ruhuna"
-            timePeriod="2021 - present"
-            description="Currently following a BSc in Computer Engineering."
+            title="Woked in E-Nenasala"
+            timePeriod="2020 - 2021"
+            description="Taught basic computer skills to the students."
           />
           <TimelineItem
             title="University of Ruhuna"

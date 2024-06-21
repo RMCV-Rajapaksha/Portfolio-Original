@@ -14,6 +14,7 @@ import ExperienceSection from './Timeline';
 import SkillSection from './SkillSection ';
 import AboutMeSection from './AboutSection';
 import HomeSection from './HomeSection';
+import MyVolunteering from './MyVolunteering';
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -49,7 +50,7 @@ function App() {
           {/* Navigation bar */}
           <nav className='fixed inset-x-0 z-50 flex items-center justify-center w-full px-6 top-2'>
             <div className='flex items-center w-full p-4 md:w-880 bg-navBar rounded-2xl'>
-              <p className='text-lg font-medium text-slate-200'>Chamara Vishwajith</p>
+              <p className='text-lg font-medium text-slate-200'>From BUGS to BRILLIANCE</p>
               <div className='items-center flex-1 hidden gap-6 ml-6 md:flex'>
                 <a href="#home" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>Home</a>
                 <a href="#about" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>About</a>
@@ -104,9 +105,10 @@ function App() {
 
             {/* Timeline section */}
             <ExperienceSection experience={Experience} />
-
+{/* Volentring Section */}
+<MyVolunteering/>
             {/* Project Section */}
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white pt-20">Projects</h2>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white pt-20">PROJECTS</h2>
             <ProjectsSection Projects={Projects}/>
 
             {/* Contact section */}
