@@ -1,12 +1,16 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
+import Chamara from './images/ChamaraVishwajith.png';
 
 const HomeSection = ({ CV }) => {
   return (
     <section id="home" className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
       <div className="w-full h-64 lg:w-2/4 lg:h-[45vh]">
-        <Spline scene="https://prod.spline.design/j71eySYKUJBmN-Pu/scene.splinecode" />
-      </div>
+  {/* <Spline scene="https://prod.spline.design/j71eySYKUJBmN-Pu/scene.splinecode" /> */}
+  <img className="object-cover w-full h-full mt-12 md:mt-16" src={Chamara} alt="Chamara Image" />
+</div>
+
+
       <div className="max-w-lg md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
         <div className="flex flex-col items-start justify-start p-12 md:px-16">
           <h2 className="text-2xl font-medium text-white lg:text-4xl">

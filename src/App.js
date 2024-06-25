@@ -66,7 +66,8 @@ function App() {
                 className='block ml-auto cursor-pointer md:hidden'
                 onClick={() => setIsActive(!isActive)}
               >
-                <IoMenu className='text-2xl text-textBase' />
+                <IoMenu className='text-2xl text-textBase'
+                  onClick={() => setIsActive(!isActive)} />
               </motion.div>
               {isActive && (
                 <motion.div
@@ -74,7 +75,7 @@ function App() {
                   animate={{ opacity: 1, scale: 1.1 }}
                   exit={{ opacity: 0, scale: 0.5 }}
                   transition={{ delay: 0.1, type: "spring" }}
-                  className='fixed flex flex-col items-center gap-6 p-4 rounded-lg w-275 bg-navBar top-24 right-16 justify-evenly'
+                  className='fixed z-0 flex flex-col items-center gap-6 p-4 rounded-lg w-275 bg-navBar top-24 right-16 justify-evenly'
                 >
                   <a href="#home" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>Home</a>
                   <a href="#about" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>About</a>

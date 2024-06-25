@@ -33,6 +33,7 @@ import Xtreme from './images/competitions/Xtreme.png';
 import Insurgex from './images/competitions/Insugex.jpg';
 import HackVenture from './images/competitions/HackVenture.jpg';
 import SparkLink from './images/competitions/SparkLink.jpg';
+import RedCypher from './images/competitions/RedCypher.jpg';
 
 //oc
 import Axiom from './images/oc/Axiom.jpg';
@@ -56,9 +57,10 @@ export const Experience = [
       date: "2023",
       iconsSrc: <IoCodeWorking />,
       title: "Eminence 3.0",
-      location: "By IEEE student branch UOR",
+      location: "By WIE Affinity group of IEEE student branch @ FOE,UOR",
       description:
-        "As team Team Inception, we won the 6th place among 15+ teams.",
+      "As a part of team Matrix, won the 1st place in Eminence 3.0, a software, electronic, telecommunication and electrical field related competition organized by WIE Affinity group of IEEE student branch @ FOE,UOR.",
+   
          img:Eminence
     },
     {
@@ -66,9 +68,10 @@ export const Experience = [
       date: "2023",
       iconsSrc: <IoCodeWorking />,
       title: "SparkLink 1.0",
-      location: "By WIE Affinity group of IEEE student branch @ FOE,UOR",
+      location: "By IEEE student branch UOR",
+    
       description:
-        "As a part of team Matrix, won the 1st place in Eminence 3.0, a software, electronic, telecommunication and electrical field related competition organized by WIE Affinity group of IEEE student branch @ FOE,UOR.",
+      "As team Team Inception, we won the 6th place among 15+ teams.",
          img:SparkLink
     },
     {
@@ -95,22 +98,23 @@ export const Experience = [
       id: 5,
       date: "2024",
       iconsSrc: <IoCodeWorking />,
+      title: "Red Cypher 1.0",
+      location: "By CS Chapter, IEEE Student Branch @ UOR",
+      description:
+        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+         img:RedCypher
+    },
+    {
+      id: 6,
+      date: "2024",
+      iconsSrc: <IoCodeWorking />,
       title: "HackVenture 1.0",
       location: "By AIESEC community @ UOK",
       description:
         "As part of Team Inception, Colifi participated in HackVenture 1.0, an innovation competition organized by the AIESEC community at UOK.",
          img:HackVenture
     },
-    {
-      id: 6,
-      date: "2010 - 2011",
-      iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
-      description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
-         img:"https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
+   
   ];
 
 
