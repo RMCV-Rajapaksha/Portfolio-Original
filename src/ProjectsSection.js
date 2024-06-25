@@ -1,8 +1,9 @@
 
 import ProjectCard from './components/projectCard';
+import { Projects } from './data';
 
 
-const ProjectsSection = ({ Projects }) => {
+const ProjectsSection = () => {
  
 
   return (

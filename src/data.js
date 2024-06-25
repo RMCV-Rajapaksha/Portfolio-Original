@@ -215,7 +215,7 @@ export const SocialLinks = [
 
 
   
-export const Logo = [
+export const tools = [
   {
     id: 1,
     imageSrc: C, 
