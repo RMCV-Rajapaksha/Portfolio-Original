@@ -107,8 +107,7 @@ function App() {
 
             {/* Timeline section */}
             <ExperienceSection experience={Experience} />
-{/* Volunteering Section */}
-<MyVolunteering/>
+
             {/* Project Section */}
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white pt-20">PROJECTS</h2>
             <ProjectsSection/>
