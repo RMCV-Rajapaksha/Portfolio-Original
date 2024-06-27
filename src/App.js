@@ -6,7 +6,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import { IoMenu } from 'react-icons/io5';
 import CV from './File/EE3253_L2_4733.pdf';
-import { Experience, SocialLinks, skills } from './data';
+import { Experience } from './data';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import ProjectsSection from './ProjectsSection';
@@ -15,6 +15,7 @@ import SkillSection from './SkillSection ';
 import AboutMeSection from './AboutSection';
 import HomeSection from './HomeSection';
 import MyVolunteering from './MyVolunteering';
+import SocialLinks from './SocialLinks';
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -134,17 +135,7 @@ function App() {
                 </form>
               </div>
               <p className='text-gray-400 capitalize text-2x1'> follow me </p>
-              <div className='flex flex-wrap items-center justify-center w-full gap-4 my-4'>
-              {
-                SocialLinks && SocialLinks.map((n) => (  
-                <motion.a 
-                whileTap={{scale:0.8}}
-                key={n.id} href={n.link} className='flex items-center justify-center w-full gap-3 px-3 py-5 duration-100 ease-in-out border cursor-pointer md:w-auto md:px-8 border-x-zine-800 rounded-2xl hover:border-zinc-600'>
-                {n.iconSrc}
-                <p className='text-lg text-textBase'>{n.name}</p>
-                </motion.a>))
-              }
-              </div>
+           <SocialLinks/>
             </section>
           </main>
         </div>

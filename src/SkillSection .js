@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaReact, FaServer, FaCogs, FaDatabase } from 'react-icons/fa';
+
 import SkillItem from './components/skillCard';
 import ToolComponent from './components/ToolComponent';
 import { skills,  tools } from './data'; // Assuming tools is also exported from './data'
