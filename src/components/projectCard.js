@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { IoLogoGithub } from 'react-icons/io';
 import { motion, useScroll } from 'framer-motion';
-import ProjectPopup from './popup';
+import ProjectPopup from './Popup';
 
 const ProjectCard = ({ project }) => {
   const [showPopup, setShowPopup] = useState(false);

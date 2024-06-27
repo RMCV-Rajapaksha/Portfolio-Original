@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SkillItem from './components/skillCard';
+import SkillItem from './components/SkillCard';
 import ToolComponent from './components/ToolComponent';
 import { skills,  tools } from './data'; // Assuming tools is also exported from './data'
 

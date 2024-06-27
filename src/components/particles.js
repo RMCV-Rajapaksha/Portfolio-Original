@@ -75,7 +75,7 @@ const ParticlesComponent = (props) => {
           default: "bounce",
         },
         random: true,
-        speed: 1,
+        speed: 3,
         straight: false,
       },
       number: {
