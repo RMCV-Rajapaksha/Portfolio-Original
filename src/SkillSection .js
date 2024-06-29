@@ -9,11 +9,11 @@ const SkillSection = () => (
     className='flex flex-wrap items-center gap-4 pl-20 pr-20 my-24 md:mx-28 justify-evenly md:mt-40 lg:mt-28' 
     id='skills'
   >
-    <h1 className="mb-2 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">
+    <h1 className="text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">
       I'M FAMILIAR WITH...
     </h1>
 
-    <div className="grid grid-cols-1 gap-4 p-10 pt-24 sm:grid-cols-2">
+    <div className="grid grid-cols-1 gap-4 p-10 pt-16 sm:grid-cols-4">
       {skills.map((skill, index) => (
         <SkillItem key={index} skill={skill} />
       ))}

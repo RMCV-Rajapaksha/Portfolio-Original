@@ -283,12 +283,12 @@ export const tools = [
 export const skills = [
   {
     icon: FaReact,
-    title: 'Frontend Development',
+    title: 'Frontend - Development',
     description: 'Prototype ideas online, without depending on your local environment.'
   },
   {
     icon: FaServer,
-    title: 'Backend Development',
+    title: 'Backend - Development',
     description: 'Deliver high-quality, engaging blogs, articles, and video tutorials to your audience.'
   },
   {
