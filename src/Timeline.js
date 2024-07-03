@@ -4,6 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const ExperienceSection = ({ experience }) => (
   <section className='flex items-center justify-center w-full pl-10 pr-10'>
+    
     <VerticalTimeline>
       {
         experience && experience.map((item) => (

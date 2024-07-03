@@ -13,7 +13,7 @@ const SkillSection = () => (
       I'M FAMILIAR WITH...
     </h1>
 
-    <div className="grid grid-cols-1 gap-4 p-10 pt-16 sm:grid-cols-4">
+    <div className="grid items-center justify-center grid-cols-1 gap-4 p-10 sm:pt-16 sm:grid-cols-4">
       {skills.map((skill, index) => (
         <SkillItem key={index} skill={skill} />
       ))}

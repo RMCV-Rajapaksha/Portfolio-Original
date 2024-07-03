@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+
 import ParticlesComponent from './components/particles';
 
 import 'react-vertical-timeline-component/style.min.css';
@@ -14,7 +14,7 @@ import ExperienceSection from './Timeline';
 import SkillSection from './SkillSection ';
 import AboutMeSection from './AboutSection';
 import HomeSection from './HomeSection';
-import MyVolunteering from './MyVolunteering';
+
 import SocialLinks from './SocialLinks';
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
           {/* Navigation bar */}
           <nav className='fixed inset-x-0 z-50 flex items-center justify-center w-full px-6 top-2'>
   <div className='flex items-center w-full p-4 md:w-880 bg-navBar rounded-2xl'>
-    <p className='text-lg font-medium text-slate-200'>From BUGS to BRILLIANCE</p>
+    <p className='text-lg font-medium text-slate-200'>From</p>
     <div className='items-center flex-1 hidden gap-6 ml-6 md:flex'>
       <a href="#home" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>Home</a>
       <a href="#about" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>About</a>
@@ -94,6 +94,7 @@ function App() {
 </nav>
 
 
+
           {/* Hero */}
           <main className='w-full mt-5'>
             {/* Home section */}
@@ -104,6 +105,9 @@ function App() {
 
             {/* Skills section */}
             <SkillSection  />
+            <h1 className="text-4xl font-extrabold tracking-tight text-center text-gray-900 mb-14 dark:text-white">
+            EVENT THAT I WENT THROUGH
+    </h1>
 
             {/* Timeline section */}
             <ExperienceSection experience={Experience} />

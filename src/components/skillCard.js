@@ -6,10 +6,10 @@ import {
   useSpring,
   useScroll,
 } from "framer-motion";
-import * as Icons from "react-icons/fi"; // Import all icons from react-icons/fi
+
 
 const ROTATION_RANGE = 32.5;
-const HALF_ROTATION_RANGE = 32.5 / 2;
+
 
 const SkillItem = ({ skill }) => {
   const ref = useRef(null);
@@ -49,8 +49,7 @@ const SkillItem = ({ skill }) => {
     y.set(0);
   };
 
-  // Dynamically get the icon based on skill.icon name
-  const IconComponent = Icons[skill.icon] || Icons.FiMousePointer;
+
 
   return (
     <motion.div
@@ -72,12 +71,9 @@ const SkillItem = ({ skill }) => {
         }}
         className="absolute grid bg-black shadow-lg inset-4 place-content-center rounded-xl"
       >
-        <IconComponent
-          style={{
-            transform: "translateZ(75px)",
-          }}
-          className="mx-auto text-4xl"
-        />
+        <div className="inline-flex items-center justify-center text-white align-middle select-none">
+          {React.createElement(skill.icon, { size: 32 })}
+        </div>
         <p
           style={{
             transform: "translateZ(50px)",
