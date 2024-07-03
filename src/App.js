@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-
 import ParticlesComponent from './components/particles';
-
 import 'react-vertical-timeline-component/style.min.css';
-
 import { IoMenu } from 'react-icons/io5';
 import CV from './File/EE3253_L2_4733.pdf';
 import { Experience } from './data';
@@ -14,8 +11,26 @@ import ExperienceSection from './Timeline';
 import SkillSection from './SkillSection ';
 import AboutMeSection from './AboutSection';
 import HomeSection from './HomeSection';
-
 import SocialLinks from './SocialLinks';
+import Chamara from './images/ChamaraVishwajith.png';
+
+
+const DownloadButton = ({ CV }) => (
+  <motion.button
+    className="relative p-[3px]"
+    whileHover={{ scale: 1.2 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <a href={CV} download='chamara_vishwajith'>
+      <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-900 to-purple-800" />
+      <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
+        Download CV
+      </div>
+    </a>
+  </motion.button>
+);
+
+
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -50,55 +65,55 @@ function App() {
         <div className="relative flex flex-col items-center justify-center w-screen min-h-screen pb-20">
           {/* Navigation bar */}
           <nav className='fixed inset-x-0 z-50 flex items-center justify-center w-full px-6 top-2'>
-  <div className='flex items-center w-full p-4 md:w-880 bg-navBar rounded-2xl'>
-    <p className='text-lg font-medium text-slate-200'>From</p>
-    <div className='items-center flex-1 hidden gap-6 ml-6 md:flex'>
-      <a href="#home" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>Home</a>
-      <a href="#about" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>About</a>
-      <a href="#skills" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>Skills</a>
-      <a href="#projects" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>Projects</a>
-      <a href="#contact" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>Contact</a>
-      <a href={CV} download='chamara_vishwajith' className='px-2 py-1 ml-auto text-base font-medium duration-100 ease-in-out border-2 cursor-pointer text-textBase hover:text-slate-100 border-textBase rounded-xl hover:border-gray-100'>
-        Download
-      </a>
-    </div>
-    <motion.div
-      whileTap={{ scale: 0.5 }}
-      className='block ml-auto cursor-pointer md:hidden'
-      onClick={() => setIsActive(!isActive)}
-    >
-      <IoMenu className='text-2xl text-textBase' />
-    </motion.div>
-    {isActive && (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1.1 }}
-        exit={{ opacity: 0, scale: 0.5 }}
-        transition={{ delay: 0.1, type: "spring" }}
-        className='fixed z-0 flex flex-col items-center gap-6 p-4 rounded-lg w-275 bg-navBar top-24 right-16 justify-evenly'
-      >
-        <a href="#home" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>Home</a>
-        <a href="#about" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>About</a>
-        <a href="#skills" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>Skills</a>
-        <a href="#projects" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>Projects</a>
-        <a href="#contact" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>Contact</a>
-        <motion.a 
-          whileTap={{ scale: 0.8 }}
-          href={CV} download='chamara_vishwajith' className='px-2 py-1 mx-auto text-base font-medium duration-100 ease-in-out border-2 cursor-pointer text-textBase hover:text-slate-100 border-textBase rounded-xl hover:border-gray-100' onClick={() => setIsActive(false)}
-        >
-          Download
-        </motion.a>
-      </motion.div>
-    )}
-  </div>
-</nav>
-
+            <div className='flex items-center w-full p-4 md:w-880 bg-navBar rounded-2xl'>
+              <p className='text-lg font-medium text-slate-200'>From</p>
+              <div className='items-center flex-1 hidden gap-6 ml-6 md:flex'>
+                <a href="#home" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>Home</a>
+                <a href="#about" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>About</a>
+                <a href="#skills" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>Skills</a>
+                <a href="#projects" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>Projects</a>
+                <a href="#contact" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100'>Contact</a>
+                <a href={CV} download='chamara_vishwajith' className='px-2 py-1 ml-auto text-base font-medium duration-100 ease-in-out border-2 cursor-pointer text-textBase hover:text-slate-100 border-textBase rounded-xl hover:border-gray-100'>
+                  Download
+                </a>
+              </div>
+              <motion.div
+                whileTap={{ scale: 0.5 }}
+                className='block ml-auto cursor-pointer md:hidden'
+                onClick={() => setIsActive(!isActive)}
+              >
+                <IoMenu className='text-2xl text-textBase' />
+              </motion.div>
+              {isActive && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1.1 }}
+                  exit={{ opacity: 0, scale: 0.5 }}
+                  transition={{ delay: 0.1, type: "spring" }}
+                  className='fixed z-0 flex flex-col items-center gap-6 p-4 rounded-lg w-275 bg-navBar top-24 right-16 justify-evenly'
+                >
+                  <a href="#home" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>Home</a>
+                  <a href="#about" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>About</a>
+                  <a href="#skills" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>Skills</a>
+                  <a href="#projects" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>Projects</a>
+                  <a href="#contact" className='text-base font-medium duration-100 ease-out cursor-pointer text-textBase hover:text-slate-100' onClick={() => setIsActive(false)}>Contact</a>
+                  <motion.a 
+                    whileTap={{ scale: 0.8 }}
+                    href={CV} download='chamara_vishwajith' className='px-2 py-1 mx-auto text-base font-medium duration-100 ease-in-out border-2 cursor-pointer text-textBase hover:text-slate-100 border-textBase rounded-xl hover:border-gray-100' onClick={() => setIsActive(false)}
+                  >
+                    Download
+                  </motion.a>
+                </motion.div>
+              )}
+            </div>
+          </nav>
 
 
           {/* Hero */}
           <main className='w-full mt-5'>
             {/* Home section */}
-            <HomeSection CV={CV}/>
+            <HomeSection CV={CV} />
+            
 
             {/* About section */}
             <AboutMeSection />
