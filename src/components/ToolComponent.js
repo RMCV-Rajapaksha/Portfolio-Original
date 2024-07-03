@@ -12,11 +12,9 @@ const ToolComponent = ({ tool }) => {
   return (
     <motion.div 
     ref={ref}
-    initial={{ y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-    onHoverStart={{ scale: 1.3 }}
-    onHoverEnd={{ scale: 1 }}
+    initial={{ y: 10, opacity: 0 ,scale:1}}
+           
+    whileHover={{ scale: 1.1 }}
     style={{
       scale: scrollYProgress,
       opacity: scrollYProgress,

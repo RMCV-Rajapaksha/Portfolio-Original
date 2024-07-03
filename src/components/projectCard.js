@@ -39,10 +39,13 @@ const ProjectCard = ({ project }) => {
     <>
       <motion.div
         ref={ref}
+        initial={{ opacity: 0, scale: 1 }}
         style={{
           scale: scrollYProgress,
           opacity: scrollYProgress,
         }}
+        whileHover={{scale: 1.1}}
+        
         className='border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[325px] hover:border-zinc-600 duration-100 ease-in-out relative justify-center items-center'
         onClick={togglePopup} // Show popup on click
       >
