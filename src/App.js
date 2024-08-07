@@ -13,7 +13,7 @@ import AboutMeSection from './AboutSection';
 
 import SocialLinks from './SocialLinks';
 import Chamara from './images/ChamaraVishwajith.png';
-import Loading from './components/loader';
+
 
 
 const DownloadButton = ({ CV }) => (
@@ -60,9 +60,6 @@ function App() {
     }
   };
 
-  if (isLoading) {
-    return <Loading />;
-  }
   return (
     <AnimatePresence initial={false}>
       <div className="App">
